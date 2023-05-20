@@ -33,4 +33,5 @@ urlpatterns = [
     path('doLogout/',views.doLogOut,name='doLogout'),
     #hod
     path('hod/home/',HOD_views.hodPanel,name='HODhome'),
+    path('hod/student/add-student/',HOD_views.addStudent,name='addStudent'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
